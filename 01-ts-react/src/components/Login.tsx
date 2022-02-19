@@ -19,8 +19,11 @@ type LoginPayload = {
     nombre: string;
 }
 
+type LogoutPayload = {
+}
+
 type AuthAction = 
-    | { type: 'logout' }
+    | { type: 'logout'}
     | { type: 'login', payload: LoginPayload};
 
 const authReducer = ( state: AuthState , action:AuthAction ): AuthState => {
@@ -67,6 +70,13 @@ export const Login = () => {
             }
         })
     }
+
+    const logout = () => {
+        dispatch({ 
+            type: 'logout',
+            }
+        )
+    }
     
 
     if( validando ){
@@ -96,6 +106,7 @@ export const Login = () => {
                 ?
                 (
                 <button
+                    onClick={ logout }
                     className="btn btn-danger"
                 >
                     Logout
