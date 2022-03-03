@@ -3,13 +3,16 @@ import { TouchableOpacity, Text, View, StyleSheet } from 'react-native';
 
 interface Props {
     title: string,
+    // el signo de pregunta lo hace opcional
+    position?: 'br' | 'bl',
+    onPress: () => void,
 }
 
-export const Fab = ( { title }: Props) => {
+export const Fab = ( { title, onPress, position = 'br' }: Props) => {
 
   return (
     <TouchableOpacity style= { styles.fabLocationBR }
-            onPress= { () => console.log('Click')  }
+            onPress= { onPress }
         >   
             <View style={ styles.fab }>
                 <Text style= { styles.fabText }>{ title }</Text>
