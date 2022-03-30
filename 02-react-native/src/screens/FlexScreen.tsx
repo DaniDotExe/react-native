@@ -14,7 +14,7 @@ export const FlexScreen = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1, 
-        backgroundColor: '#28C4D9',
+        backgroundColor: '#28C4D8',
         flexDirection: 'row'
     },
     caja1: {
