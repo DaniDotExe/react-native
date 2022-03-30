@@ -4,10 +4,9 @@ import { View, StyleSheet } from 'react-native';
 export const PositionScreen = () => {
   return (
     <View style={styles.container}>
+        <View style={styles.cajaVerde}/>
         <View style={styles.cajaMorada}/>
         <View style={styles.cajaNaranja}/>
-        <View style={styles.cajaVerde}/>
-
     </View>
   )
 }
