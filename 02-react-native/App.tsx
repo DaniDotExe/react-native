@@ -6,6 +6,7 @@ import { DimensionesScreen } from './src/screens/DimensionesScreen';
 //import { Text, View } from 'react-native';
 //import HolaMundoScreen from './src/screens/HolaMundoScreen';
 //import { ContadorScreen } from './src/screens/ContadorScreen';
+import { PositionScreen } from './src/screens/PositionScreen';
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
       {/*<HolaMundoScreen/> */}
       {/*<ContadorScreen/> */}
       {/* <BoxObjectModelScreen/> */}
-      <DimensionesScreen/>
+      {/* <DimensionesScreen/> */}
+      <PositionScreen/>
     </SafeAreaView>
   )
 }
