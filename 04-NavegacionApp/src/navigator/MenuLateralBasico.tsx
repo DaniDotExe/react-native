@@ -11,6 +11,7 @@ const Drawer = createDrawerNavigator();
 export const MenuLateralBasico = () => {
 
   const {width} = useWindowDimensions();
+  //console.log(width)
   console.log(width)
 
   return (
