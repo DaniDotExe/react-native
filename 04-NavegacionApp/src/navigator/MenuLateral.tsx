@@ -4,7 +4,7 @@ import 'react-native-gesture-handler';
 import { createDrawerNavigator, DrawerContentComponentProps, DrawerContentScrollView } from '@react-navigation/drawer';
 import { StackNavigator } from './StackNavigator';
 import { SettingsScreen } from '../screens/SettingsScreen';
-import { useWindowDimensions, Text, View, Image } from 'react-native';
+import { useWindowDimensions, Text, View, Image, TouchableOpacity } from 'react-native';
 import { styles } from '../theme/appTheme';
 
 const Drawer = createDrawerNavigator();
@@ -21,9 +21,11 @@ export const MenuLateral = () => {
   );
 }
 
-const MenuInterno = ( props: DrawerContentComponentProps) => {
+const MenuInterno = ( { navigation }: DrawerContentComponentProps) => {
   return (
     <DrawerContentScrollView>
+      
+      {/* Parte de la imagen */}
       <View style={ styles.imagenContainer}>
         <Image 
           source={{
@@ -32,6 +34,26 @@ const MenuInterno = ( props: DrawerContentComponentProps) => {
           style={ styles.imagen }
         />
       </View>
+
+      {/* Opciones del menu */}
+      <View style= {styles.menuContainer}>
+
+          <TouchableOpacity 
+            style={ styles.menuButon }
+            onPress={ () => navigation.navigate('StackNavigator')}
+          >
+            <Text style={styles.menuTexto}>Navegación Stack</Text>
+          </TouchableOpacity>
+          
+          <TouchableOpacity 
+            style={ styles.menuButon }
+            onPress={ () => navigation.navigate('SettingsScreen')}
+          >
+            <Text style={styles.menuTexto} >Ajustes</Text>
+          </TouchableOpacity>
+
+      </View>
+
     </DrawerContentScrollView>
   );
 }
