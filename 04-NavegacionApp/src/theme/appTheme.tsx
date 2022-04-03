@@ -18,10 +18,18 @@ export const styles = StyleSheet.create({
         marginRight: 10
         
     },
-    botonGrandeTexto:{
+    botonGrandeTexto: {
         color: 'white',
         fontSize: 10,
         fontWeight: 'bold',
-
-    }
+    },
+    imagenContainer: {
+        alignItems: 'center',
+        marginTop: 20,
+    },
+    imagen: {
+        width: 150,
+        height: 150,
+        borderRadius: 100,
+    },
 });
