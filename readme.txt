@@ -1,4 +1,4 @@
-npm install
+pm install
 npm install @react-navigation/native
 npm install @react-navigation/native-stack
 npm install react-native-screens react-native-safe-area-context
@@ -9,7 +9,10 @@ npm install @react-navigation/drawer
 npm install react-native-gesture-handler react-native-reanimated
 npm install
 
+#recomendado con yarn
 yarn install
+
+#seccion 7
 yarn add @react-navigation/native
 yarn add react-native-screens react-native-safe-area-context
 yarn add @react-navigation/native-stack
@@ -19,4 +22,8 @@ yarn add @react-navigation/stack
 yarn add @react-navigation/drawer
 yarn add react-native-gesture-handler react-native-reanimated
 yarn add react-native-reanimated@2.2.4
+yarn install
+
+#seccion 8
+yarn add @react-navigation/bottom-tabs
 yarn install
