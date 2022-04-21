@@ -18,6 +18,5 @@ yarn add @react-native-masked-view/masked-view
 yarn add @react-navigation/stack
 yarn add @react-navigation/drawer
 yarn add react-native-gesture-handler react-native-reanimated
-yarn install
-
 yarn add react-native-reanimated@2.2.4
+yarn install
