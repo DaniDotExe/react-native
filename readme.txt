@@ -1,14 +1,3 @@
-pm install
-npm install @react-navigation/native
-npm install @react-navigation/native-stack
-npm install react-native-screens react-native-safe-area-context
-npm install @react-navigation/stack
-npm install react-native-gesture-handler
-npm install @react-native-masked-view/masked-view
-npm install @react-navigation/drawer
-npm install react-native-gesture-handler react-native-reanimated
-npm install
-
 #recomendado con yarn
 yarn install
 
@@ -39,4 +28,5 @@ yarn add react-native-pager-view
   },
 ]
 npm install react-native-pager-view
+npm install --save react-native-vector-icons
 yarn install
