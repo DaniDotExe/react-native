@@ -7,6 +7,7 @@ import { StackNavigator } from './StackNavigator';
 import { Platform, Text, useColorScheme } from 'react-native';
 import { colores } from '../theme/appTheme';
 import { TopTabNavigator } from './TopTapNavigator';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export const Tabs = () => {
     return Platform.OS === 'ios'
@@ -39,20 +40,20 @@ function TabAndroid() {
 
                 switch( route.name ){
                     case 'Tab1Screen':
-                        iconName = 'T1'
+                        iconName = 'american-football'
                     break;
 
                     case 'TopTabNavigator':
-                        iconName = 'TT'
+                        iconName = 'arrow-forward-circle'
                     break;
 
                     case 'StackNavigator':
-                        iconName = 'St'
+                        iconName = 'bandage'                     
                     break;
                 }
 
                 /*console.log(route.name)*/
-                return <Text style={{ color }}>{ iconName }</Text>
+                return <Icon name={ iconName } size={20} color={color} />
             }
         })
     }
