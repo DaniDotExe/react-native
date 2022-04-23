@@ -27,4 +27,16 @@ yarn install
 #seccion 8
 yarn add @react-navigation/bottom-tabs
 yarn add @react-navigation/material-bottom-tabs react-native-paper react-native-vector-icons
+yarn add @react-navigation/material-top-tabs react-native-tab-view
+yarn add react-native-pager-view
+[En package.json
+"scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start --reset-cache",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+]
+npm install react-native-pager-view
 yarn install
