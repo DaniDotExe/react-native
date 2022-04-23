@@ -26,4 +26,5 @@ yarn install
 
 #seccion 8
 yarn add @react-navigation/bottom-tabs
+yarn add @react-navigation/material-bottom-tabs react-native-paper react-native-vector-icons
 yarn install
