@@ -22,6 +22,7 @@ const App = () => {
   )
 }
 
+/* mejorando */
 const AppState = ({ children }:any) => {
   return (
     <AuthProvider>
